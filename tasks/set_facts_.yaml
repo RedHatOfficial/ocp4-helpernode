@@ -62,6 +62,7 @@
         - nfs-server
         - nfs-lock
         - nfs-idmap
+        - rsyslog
   when: ansible_distribution_major_version == "7"
 
 - block:
@@ -117,4 +118,5 @@
         - httpd
         - rpcbind
         - nfs-server
+        - rsyslog
   when: ansible_distribution_major_version == "8"
